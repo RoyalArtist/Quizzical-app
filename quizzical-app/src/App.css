@@ -1,42 +1,46 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.welcome-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.welcome-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 300px;
+  margin-block: auto;
+  color: #293264;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.start__btn {
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 50px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.shape-yellow {
+  transform: translate(609px, -370px);
+  width: 300px;
 }
 
-.card {
-  padding: 2em;
+.shape-blue {
+  transform: translate(-640px, -160px);
+  width: 300px;
 }
 
-.read-the-docs {
-  color: #888;
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #293264;
+}
+
+.question {
+  list-style: none;
 }
